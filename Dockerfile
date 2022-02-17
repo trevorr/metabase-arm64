@@ -1,3 +1,7 @@
+ARG metabase_repo=metabase
+ARG metabase_version=latest
+FROM metabase/${metabase_repo}:${metabase_version} as metabase
+
 # From https://github.com/metabase/metabase/issues/13119#issuecomment-1000350647
 
 FROM ubuntu:21.04
@@ -18,13 +22,11 @@ RUN apt-get update -yq && apt-get install -yq bash fonts-dejavu-core fonts-dejav
 
 
 WORKDIR /app
+USER metabase
 
 # copy app from the offical image
-COPY --from=metabase/metabase:latest /app /app
+COPY --from=metabase --chown=metabase /app /app
 
-RUN chown -R metabase /app
-
-USER metabase
 # expose our default runtime port
 EXPOSE 3000
 
