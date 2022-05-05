@@ -23,5 +23,5 @@ docker buildx build --push --platform linux/amd64,linux/arm64 --tag loancrate/me
 ### Building a specific repo and/or version
 
 ```
-docker buildx build --push --platform linux/amd64,linux/arm64 --tag loancrate/metabase:enterprise-v1.41.4 --build-arg metabase_repo=metabase-enterprise --build-arg metabase_version=v1.41.4 .
+docker buildx build --push --platform linux/amd64,linux/arm64 --tag loancrate/metabase:enterprise-v1.42.4 --build-arg metabase_repo=metabase-enterprise --build-arg metabase_version=v1.42.4 .
 ```
