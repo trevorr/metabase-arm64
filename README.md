@@ -17,11 +17,11 @@ docker buildx create --use
 ### Building latest
 
 ```sh
-docker buildx build --push --platform linux/amd64,linux/arm64 --tag loancrate/metabase:latest .
+docker buildx build --push --platform linux/amd64,linux/arm64 --tag scurrilous/metabase:latest .
 ```
 
 ### Building a specific repo and/or version
 
 ```sh
-docker buildx build --push --platform linux/amd64,linux/arm64 --tag loancrate/metabase:enterprise-v1.46.6.4 --build-arg metabase_repo=metabase-enterprise --build-arg metabase_version=v1.46.6.4 .
+docker buildx build --push --platform linux/amd64,linux/arm64 --tag scurrilous/metabase:enterprise-v1.46.6.4 --build-arg metabase_repo=metabase-enterprise --build-arg metabase_version=v1.46.6.4 .
 ```
