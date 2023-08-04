@@ -1,5 +1,8 @@
 # metabase-arm64
 
+> :warning: **This repository has been deprecated and archived.**
+> Please use [loancrate/metabase-arm64](https://github.com/loancrate/metabase-arm64) instead.
+
 Multi-arch/arm64-compatible images for [metabase](https://hub.docker.com/r/metabase/metabase).
 
 Based on [this comment](https://github.com/metabase/metabase/issues/13119#issuecomment-1000350647) from the [Metabase issue for supporting ARM](https://github.com/metabase/metabase/issues/13119).
