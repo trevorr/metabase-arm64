@@ -4,7 +4,7 @@ FROM metabase/${metabase_repo}:${metabase_version} as metabase
 
 # From https://github.com/metabase/metabase/issues/13119#issuecomment-1000350647
 
-FROM eclipse-temurin:11.0.15_10-jre-focal
+FROM ubuntu:22.04
 
 ENV FC_LANG en-US LC_CTYPE en_US.UTF-8
 
